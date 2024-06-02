@@ -20,18 +20,106 @@ html {
     box-sizing: border-box;
     font-size: 13px;
     height: 100%;
-  }
+}
     
-  *, *:before, *:after {
+*, *:before, *:after {
     box-sizing: inherit;
-  }
+}
   
-  body {
+body {
     min-height: 100%;
-  }
+}
     
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
+    font-family: var(--ff-barlow);
     font-weight: normal;  
-  }
+}
+
+  /* custom styling */
+.content-container {
+    /* border: solid 1px red; */
+    padding:clamp(70px, 12vw, 165px) clamp(24px, 6vw, 165px);
+    min-width: 100vw;
+}
+
+section {
+    /* border: solid 1px grey; */
+    border-radius: 8px;
+    padding: 23px 30px;
+    padding-bottom: 32px;
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25em;
+    /* border: solid 1px black; */
+
+}
+
+.profile-info {
+    /* border: solid 1px green; */
+    display: inline-block;
+
+    
+}
+
+.name {
+    font-size: .95em;
+    margin-bottom: .25em;
+    /* border: solid 1px green; */
+}
+.credential {
+    font-size: .8em;
+    color: hsla(0, 0%, 100%, 0.5);
+        /* border: solid 1px green; */
+
+}
+
+.quote-summary {
+    font-size: 1.585em;
+    font-weight: 500;
+    z-index: 2;
+    line-height: 1.15em;
+
+    margin-bottom: 16px;
+    /* border: solid 1px green; */
+}
+
+.quote {
+    color: hsla(0, 0%, 100%, 0.7);
+    /* font-size: 14.2px;
+    line-height: 1.25em; */
+    font-size: 13px;
+    line-height: 1.4em;
+    padding-right: 23px;
+    /* border: solid 1px green; */
+
+}
+
+#daniel-clifford {
+    background-color: var(--primary-violet);
+    color: var(--primary-white);
+    position: relative;
+    z-index: -2;
+}
+
+.pic {
+    border: solid 2px hsla(263, 33%, 77%, 0.5);
+    border-radius: 25px;
+    max-width: 33px;
+    display: inline-block;
+    margin-right: 16px;
+}
+
+#svg {
+    /* border: solid 1px green; */
+    position: absolute;
+    top: 0;
+    right: 23px;
+    z-index: -1;
+}
+
