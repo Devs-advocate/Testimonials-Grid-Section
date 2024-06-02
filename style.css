@@ -40,8 +40,10 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   /* custom styling */
 .content-container {
     /* border: solid 1px red; */
+    /* padding: clamp(70px, 12vw, 165px) clamp(24px, 70vw, 165px); */
     padding:clamp(70px, 12vw, 165px) clamp(24px, 6vw, 165px);
     min-width: 100vw;
+    /* height: 100vh; */
     background-color: var(--primary-white);
 }
 
@@ -202,3 +204,26 @@ section {
     color: hsla(219, 29%, 14%, 0.7);
 }
 
+@media(min-width: 1100px) {
+    section {
+        margin-bottom: 0;
+    }
+
+    .content-container {
+        display: grid;
+        gap: 1.5rem;
+        padding: 165px;
+        grid-template-columns: repeat(4, 1fr);
+        /* padding: 165px; */
+    }
+
+    .grid-col-span-2 {
+        grid-column: span 2;
+    }
+
+    section:last-child {
+        grid-column-start: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
