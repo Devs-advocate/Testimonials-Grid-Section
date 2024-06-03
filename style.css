@@ -226,4 +226,16 @@ section {
         grid-row-start: 1;
         grid-row-end: 3;
     }
+
+    #kira-whittle {
+        font-size: 14px;
+    }
+    
+    #patrick-abrams {
+        font-size: 13.5px;
+    }
+
+    #svg {       
+        right: 80px;
+    }
 }
