@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/Devs-advocate/Testimonials-Grid-Section)
+- Live Site URL: [Netlify](https://grid-challenge-devs-advocate.netlify.app/)
 
 ## My process
 
